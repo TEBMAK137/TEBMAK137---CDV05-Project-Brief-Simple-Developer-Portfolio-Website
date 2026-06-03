@@ -31,7 +31,7 @@
     <!-- Navigation -->
     <nav class="navbar">
       <div class="nav-container">
-        <div class="logo">Tebogo Makgakga's Developer Portfolio</div>
+        <div class="logo">Tebogo Makgakga</div>
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -41,107 +41,87 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
-
+    <!-- Hero Section (condensed intro) -->
     <section id="home" class="hero">
       <div class="container hero-grid">
         <div class="hero-text">
           <h1>Hi, I'm <span class="highlight">Tebogo Makgakga</span></h1>
-
           <p>
             Aspiring Software Developer | Data Science Enthusiast | Cloud
             Engineering Learner
           </p>
-
           <p>
-            I have five years of experience as a Customer Acquisitions
-            Specialist (Consumer and Business/Corporate), with a strong
-            background in vetting consumer and corporate credit assessments.
-            During this time, I was recognized for outstanding performance,
-            receiving the Best Customer Acquisitions Agent of the Year award in
-            2022, followed by Best Performer of the Year awards in 2023, 2024,
-            and 2025 in my role as a Corporate Vetter. These achievements
-            reflect my consistency, attention to detail, and commitment to
-            delivering high-quality results. In parallel with my professional
-            career, I have pursued formal studies in Software Development
-            through CodeSpace Academy, where I developed foundational
-            programming and problem-solving skills. I am capable of building
-            interactive projects using Scratch, as well as developing functional
-            websites using HTML5, CSS, and JavaScript, also with React and
-            Node.js. I deeply love technology and am passionate about expanding
-            my expertise. In addition to software development, I am actively
-            interested in cloud computing and plan to pursue certifications and
-            hands-on experience to become proficient in cloud platforms such as
-            AWS, Azure, or Google Cloud. I am currently shadowing for a Data
-            Capturer role with the goal of becoming a Data Scientist once I
-            obtain the necessary certificates and skills.
+            5+ years in Customer Acquisitions, award‑winning performer, now
+            transitioning into tech. I build with HTML, CSS, JavaScript, React &
+            Node.js, and I'm passionate about cloud computing (AWS/Azure/GCP).
           </p>
-
           <a href="#projects" class="btn">View My Work →</a>
         </div>
-
         <div class="hero-image">
           <img
             src="./Images/1710962146313 1.jpeg"
             alt="Tebogo Makgakga"
             class="round-image"
-            onerror="this.src = ''"
+            onerror="
+              this.src = 'https://randomuser.me/api/portraits/men/32.jpg'
+            "
           />
         </div>
       </div>
     </section>
 
     <!-- Projects Section -->
-
     <section id="projects" class="projects">
       <div class="container">
         <h2>Featured Projects</h2>
-
         <div class="projects-grid">
           <!-- Project 1 -->
           <div class="project-card">
             <img
               class="project-img"
               src="./Images/Screenshot 2026-06-03 114357.png"
-              alt="Task Manager App"
+              alt="Digital Resume Project"
             />
             <div class="project-info">
               <h3>📋 Digital Resume (2023)</h3>
               <p>
-                A Digital Resume that has all of my details including skills,
-                interests Hobbies and also contact information.
+                A fully responsive digital resume showcasing my skills,
+                interests, hobbies and contact information.
               </p>
+              <div class="tech-stack">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+              </div>
               <a
                 href="https://github.com/TEBMAK137/TEBMAK137_PTO2301_GroupD_TebogoMakgakga_ITW9.git"
                 class="project-link"
+                target="_blank"
                 >GitHub →</a
               >
             </div>
           </div>
-
           <!-- Project 2 -->
-
           <div class="project-card">
             <img
               class="project-img"
               src="./Images/Screenshot 2026-06-03 114707.png"
-              alt="Weather Dashboard"
+              alt="Kanban Board Project"
             />
             <div class="project-info">
-              <h3>Kanban Board (2026)</h3>
+              <h3>📌 Kanban Board (2026)</h3>
               <p>
-                This project involves deploying a Kanban app to Netlify,
-                ensuring the app's functionality and persistence through local
-                storage, and implementing dynamic features such as task editing,
-                deletion, sidebar interaction, and a theme toggle. The goal is
-                to deliver a fully functional, deployable application that is
-                responsive across devices and maintains data consistency.
-                Students will also focus on clean, modular code that is
-                well-documented for future development.
+                A dynamic task management app with local storage, drag‑and‑drop,
+                theme toggle, and full responsiveness.
               </p>
+              <div class="tech-stack">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">LocalStorage</span>
+                <span class="tech-tag">CSS Grid</span>
+              </div>
               <a
                 href="https://github.com/TEBMAK137/JSL05-SOLUTION-main--1-.git"
                 class="project-link"
+                target="_blank"
                 >GitHub →</a
               >
             </div>
@@ -150,74 +130,109 @@
       </div>
     </section>
 
-    <!-- Resume Section -->
-
+    <!-- Resume Section (About Me + Skills) -->
     <section id="resume" class="resume-section">
       <div class="container">
         <h2>About Me</h2>
-        <p>
-          I have a deep love for technology and am actively transitioning from
-          Customer Acquisitions into Software Development and Data Science. I
-          genuinely enjoy studying, learning new concepts, and seeking advice
-          from experienced professionals – I believe the best way to grow is to
-          learn from those who have already walked the path.
-        </p>
-        <p>
-          👨‍👩‍👧‍👦 My most important priority is spending quality time with my wife
-          and kids. A balanced life fuels my motivation.
-        </p>
-        <p>
-          🌱 Beyond tech, I am running and starting other businesses:
-          agriculture, cleaning chemical supplies, and I aspire to build my own
-          IT startup. Multitasking may not be my strongest attribute, but I make
-          up for it by persistent learning and refusing to stop until things are
-          done correctly. Once I push through, everything falls into place and
-          runs smoothly.
-        </p>
-        <p>
-          📚 In my free time, I enjoy reading books and exercising – these
-          habits keep me curious, healthy, and focused.
-        </p>
-        <br />
+        <div class="about-content">
+          <p>
+            I have a deep love for technology and am actively transitioning from
+            Customer Acquisitions into Software Development and Data Science. I
+            genuinely enjoy studying, learning new concepts, and seeking advice
+            from experienced professionals – I believe the best way to grow is
+            to learn from those who have already walked the path.
+          </p>
+          <p>
+            👨‍👩‍👧‍👦 My most important priority is spending quality time with my wife
+            and kids. A balanced life fuels my motivation.
+          </p>
+          <p>
+            🌱 Beyond tech, I am running and starting other businesses:
+            agriculture, cleaning chemical supplies, and I aspire to build my
+            own IT startup. Multitasking may not be my strongest attribute, but
+            I make up for it by persistent learning and refusing to stop until
+            things are done correctly. Once I push through, everything falls
+            into place and runs smoothly.
+          </p>
+          <p>
+            📚 In my free time, I enjoy reading books and exercising – these
+            habits keep me curious, healthy, and focused.
+          </p>
+        </div>
 
-        <h3>Skills</h3>
-        <br />
-        <ul>
-          <li>HTML5 & CSS3</li>
-          <li>JavaScript</li>
-          <li>Dynamic JavaScript (Learning)</li>
-          <li>React.js and Node.js</li>
-          <li>Git & GitHub</li>
-          <li>Python (Learning)</li>
-          <li>SQL (Learning)</li>
-          <li>AWS Cloud Fundamentals</li>
-        </ul>
+        <div class="skills-wrapper">
+          <h3>Technical Skills</h3>
+          <ul class="skills-list">
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript</li>
+            <li>Dynamic JavaScript (Learning)</li>
+            <li>React.js & Node.js</li>
+            <li>Git & GitHub</li>
+            <li>Python (Learning)</li>
+            <li>SQL (Learning)</li>
+            <li>AWS Cloud Fundamentals</li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <!-- Contact -->
-
+    <!-- Contact Section (info + form) -->
     <section id="contact" class="contact-section">
-      <div class="container">
-        <h2>Contact Me</h2>
-
-        <p>Email: makgakgatg@gmail.com</p>
-        <p>Cell: 0798088385</p>
-
-        <a
-          href="https://www.linkedin.com/in/tebogo-makgakga-16a7701a1/"
-          target="_blank"
-          >LinkedIn</a
-        ><br />
-        <a href="https://github.com/TEBMAK137" target="_blank">GitHub</a><br />
-        <a href="https://www.instagram.com/godfather_93/" target="_blank"
-          >Instagram</a
-        >
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2>Let's Connect</h2>
+          <p>
+            Open to freelance work, collaboration, or a friendly chat. Reach me
+            via email or social media.
+          </p>
+          <div class="social-links">
+            <a href="mailto:makgakgatg@gmail.com" class="social-btn"
+              >📧 Email</a
+            >
+            <a
+              href="https://www.linkedin.com/in/tebogo-makgakga-16a7701a1/"
+              class="social-btn"
+              target="_blank"
+              >🔗 LinkedIn</a
+            >
+            <a
+              href="https://github.com/TEBMAK137"
+              class="social-btn"
+              target="_blank"
+              >🐙 GitHub</a
+            >
+            <a
+              href="https://www.instagram.com/godfather_93/"
+              class="social-btn"
+              target="_blank"
+              >📸 Instagram</a
+            >
+          </div>
+          <div class="direct-contact">
+            <p><strong>📞 Phone:</strong> 079 808 8385</p>
+            <p><strong>✉️ Email:</strong> makgakgatg@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h3>Send a Message</h3>
+          <form
+            action="https://formsubmit.co/tebogo.makgakga@proton.me"
+            method="POST"
+          >
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send Message →</button>
+          </form>
+        </div>
       </div>
     </section>
 
     <footer>
-      <p>© 2026 Tebogo Makgakga</p>
+      <p>© 2026 Tebogo Makgakga – Built with HTML, CSS & JavaScript</p>
     </footer>
 
     <script src="index.js"></script>
