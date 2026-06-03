@@ -1,0 +1,266 @@
+/* ============================================
+   ORIGINAL COLOR SCHEME
+   Background: #f1efd3
+   Accents: rgb(213, 186, 152), #e9cca8
+   Borders: rgb(128, 100, 30)
+============================================ */
+
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f1efd3;
+  color: #2c2b26;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid rgb(128, 100, 30);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+/* NAVBAR */
+.navbar {
+  background: rgba(241, 239, 211, 0.95);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgb(128, 100, 30);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #8b5a2b;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #5a3e1b;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  color: #b97f10;
+}
+
+/* HERO */
+.hero {
+  padding: 4rem 0;
+  background: #e9cca8;
+}
+
+.hero-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 2;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+}
+
+.hero-text p {
+  margin: 1rem 0;
+  max-width: 520px;
+}
+
+.highlight {
+  color: #8b5a2b;
+  border-bottom: 2px solid rgb(128, 100, 30);
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  background: rgb(213, 186, 152);
+  padding: 0.7rem 1.8rem;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  background: rgb(193, 166, 132);
+}
+
+/* Image */
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.round-image {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+/* PROJECTS */
+.projects {
+  padding: 4rem 0;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: white;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  transition: 0.3s;
+  border: 1px solid rgb(213, 186, 152);
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+}
+
+.project-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 1.2rem;
+}
+
+.tech-tag {
+  background: #e9cca8;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+}
+
+/* RESUME */
+.resume-section {
+  padding: 3rem 0;
+}
+
+.two-column {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgb(213, 186, 152);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.skills-list li {
+  background: #e9cca8;
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+}
+
+/* CONTACT */
+.contact-section {
+  background: #e9cca8;
+  padding: 3rem 0;
+}
+
+.contact-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(213, 186, 152);
+}
+
+/* Footer */
+footer {
+  background: #2c2b26;
+  color: #e9cca8;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-grid {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .two-column {
+    flex-direction: column;
+  }
+
+  .contact-grid {
+    flex-direction: column;
+  }
+}
